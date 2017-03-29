@@ -9,6 +9,8 @@ import {Page404Component} from "./routers/page404/page404.component";
 import {FooterComponent} from "./components/footer/footer.component";
 import {AuthLoginComponent} from './routers/auth-login/auth-login.component';
 import {Ng2BootstrapModule} from "ng2-bootstrap";
+import { HomeComponent } from './routers/home/home.component';
+import {ClientValidateService} from "./service/client-validate.service";
 
 @NgModule({
   declarations: [
@@ -16,6 +18,7 @@ import {Ng2BootstrapModule} from "ng2-bootstrap";
     Page404Component,
     FooterComponent,
     AuthLoginComponent,
+    HomeComponent,
   ],
   imports: [
     BrowserModule,
@@ -24,7 +27,7 @@ import {Ng2BootstrapModule} from "ng2-bootstrap";
     AppRouter,
     Ng2BootstrapModule.forRoot()
   ],
-  providers: [],
+  providers: [ClientValidateService],
   bootstrap: [AppComponent]
 })
 export class AppModule {

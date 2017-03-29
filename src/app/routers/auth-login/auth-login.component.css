@@ -7,10 +7,7 @@ form {
   left: 0;
   right: 0;
   width: 400px;
-  -moz-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  -webkit-transform: translateY(-50%);
-  transform: translateY(-50%);
+  margin-top: -200px;
 }
 /* line 12, auth-login.component.scss */
 form .form-group {
